@@ -1,0 +1,331 @@
+.container_me{
+height: 100vh;
+display: grid;
+grid-template-columns: repeat(10,1fr);
+grid-template-rows: repeat(10,1fr);
+grid-column-gap: 15px;
+padding:30px;
+align-items:center;
+flex-direction:column;
+}
+
+@mixin header {
+  color: #fff;
+  text-decoration: none;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 30px;
+}
+
+.me {
+  grid-row:2;
+  grid-column: 4/6;
+  opacity: 0.4;
+  @include header;
+}
+
+.work_me {
+  grid-row:2;
+  grid-column: 6/8;
+  @include header;
+}
+
+.skills_me {
+  grid-row:2;
+  grid-column: 8/10;
+  @include header;
+  opacity: 0.4;
+
+}
+.home {
+  grid-row:2;
+  grid-column: 2/4;
+  @include header;
+  opacity: 0.4;
+}
+
+.work_me:hover {
+text-decoration: underline yellow;
+transform: translateY(-4px);
+}
+
+.me:hover {
+  text-decoration: underline yellow;
+  transform: translateY(-4px);
+  opacity: 1;
+}
+
+.skills_me:hover {
+  text-decoration: underline yellow;
+  transform: translateY(-4px);
+  opacity: 1;
+}
+.home:hover {
+  text-decoration: underline yellow;
+  transform: translateY(-4px);
+  opacity: 1;
+}
+
+
+.bubble{
+  position: absolute;
+  width:5em;
+  height: 5em;
+  border-radius: 100%;
+  background-color: yellow;
+  box-shadow: inset -8px -6px 26px #982727;
+}
+
+.line_3{
+  grid-row:8;
+  grid-column: 2/10;
+  background-color: grey;
+  height: 100%;
+  z-index: 1;
+  position: relative;
+  animation-name: tetris;
+  animation-duration: 5s;
+  animation-iteration-count: 1;
+}
+
+.line_2{
+  grid-row:7;
+  grid-column: 2/8;
+  background-color: grey;
+  height: 100%;
+  z-index: 1;
+  position: relative;
+  animation-name: tetris;
+  animation-duration: 5s;
+  animation-iteration-count: 1;
+}
+
+.experience{
+  grid-row: 5;
+  grid-column: 2/4;
+  font-size: 28px;
+  position: relative;
+  animation-name: tetris;
+  animation-duration: 5s;
+  animation-iteration-count: 1;
+}
+@keyframes tetris {
+  from { top:-100px;}
+  to { top: 0px;}
+}
+
+.job1{
+  grid-row: 8;
+  grid-column: 2/4;
+  padding-left: 7px;
+  z-index: 2;
+  color:#fff;
+  position: relative;
+  animation-name: tetris;
+  animation-duration: 5s;
+  animation-iteration-count: 1;
+}
+
+.job2{
+  grid-row: 8;
+  grid-column: 4/6;
+  z-index: 2;
+  color:#fff;
+  position: relative;
+  animation-name: tetris;
+  animation-duration: 5s;
+  animation-iteration-count: 1;
+}
+
+.job3{
+  grid-row: 8;
+  grid-column: 6/8;
+  z-index: 2;
+  color:#fff;
+  position: relative;
+  animation-name: tetris;
+  animation-duration: 5s;
+  animation-iteration-count: 1;
+}
+.job4{
+  grid-row: 8;
+  grid-column: 8/10;
+  z-index: 2;
+  color:#fff;
+  position: relative;
+  animation-name: tetris;
+  animation-duration: 5s;
+  animation-iteration-count: 1;
+}
+
+
+
+.job5{
+  grid-row: 7;
+  grid-column: 2/4;
+  z-index: 2;
+  padding-left: 7px;
+  position: relative;
+  animation-name: tetris;
+  animation-duration: 5s;
+  animation-iteration-count: 1;
+}
+
+.job6{
+  grid-row: 7;
+  grid-column: 4/6;
+  z-index: 2;
+  position: relative;
+  animation-name: tetris;
+  animation-duration: 5s;
+  animation-iteration-count: 1;
+}
+.job7{
+  grid-row: 7;
+  grid-column:6/8;
+  z-index: 2;
+  position: relative;
+  animation-name: tetris;
+  animation-duration: 5s;
+  animation-iteration-count: 1;
+}
+.job8{
+  grid-row: 6;
+  grid-column:2/4;
+  background-color: grey;
+  height: 100%;
+  padding-top: 7px;
+  padding-left: 7px;
+  position: relative;
+  animation-name: tetris;
+  animation-duration: 5s;
+  animation-iteration-count: 1;
+}
+
+@keyframes tetris3 {
+  from { top:-300px;}
+  to { top: 0px;}
+}
+
+@mixin skill {
+  position: relative;
+  animation-name: tetris3;
+  animation-duration: 4s;
+  animation-iteration-count: 1;
+}
+
+.skills{
+  grid-row: 5;
+  grid-column: 9/11;
+  font-size: 28px;
+  @include skill;
+}
+
+.development{
+  grid-row: 6;
+  grid-column: 9/10;
+  background-color:#EF551f;
+  padding-left: 7px;
+  height: 100%;
+  @include skill;
+}
+
+.graphic{
+  grid-row: 7;
+  grid-column: 9/11;
+  z-index: 2;
+  padding-left: 7px;
+  @include skill;
+}
+.software{
+  grid-row: 7;
+  grid-column: 8;
+  z-index: 2;
+  padding-left: 7px;
+  @include skill;
+}
+
+.line_4{
+  grid-row: 7;
+  grid-column: 8/10;
+  background-color: #EF551f;
+  height: 100%;
+  z-index: 1;
+  @include skill;
+}
+
+
+@keyframes tetris2 {
+  from { top:-300px;}
+  to { top: 0px;}
+}
+@mixin soft {
+  position: relative;
+  animation-name: tetris2;
+  animation-duration: 5s;
+  animation-iteration-count: 1;
+  z-index: 2;
+}
+
+.soft_skills{
+  grid-row: 5;
+  grid-column: 4/6;
+  font-size: 28px;
+  @include soft;
+}
+
+.iniative{
+  color: grey;
+  grid-row: 6;
+  grid-column: 4;
+  z-index: 2;
+  padding-left: 7px;
+  @include soft;
+}
+
+.responsible{
+  color: grey;
+  grid-row: 6;
+  grid-column: 5;
+  z-index: 2;
+  padding-left: 7px;
+  @include soft;
+
+}
+.problem_solver{
+  color: grey;
+  grid-row: 6;
+  grid-column: 6;
+  z-index: 2;
+  padding-left: 7px;
+  @include soft;
+
+}
+.teamwork{
+  color: grey;
+  grid-row: 6;
+  grid-column: 7;
+  z-index: 2;
+  padding-left: 7px;
+  @include soft;
+
+}
+.friendly{
+  color: grey;
+  grid-row: 6;
+  grid-column: 8;
+  z-index: 2;
+  padding-left: 7px;
+  @include soft;
+}
+
+.line_5{
+  grid-row: 6;
+  grid-column: 4/9;
+  background-color: yellow;
+  height: 100%;
+  z-index: 1;
+  position: relative;
+  animation-name: tetris2;
+  animation-duration: 5s;
+  animation-iteration-count: 1;
+}
