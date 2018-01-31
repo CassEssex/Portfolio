@@ -14,7 +14,7 @@
   opacity: 0.4;
   color: #fff;
   text-decoration: none;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 30px; }
 
 .work_me {
@@ -22,7 +22,7 @@
   grid-column: 6/8;
   color: #fff;
   text-decoration: none;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 30px; }
 
 .skills_me {
@@ -30,7 +30,7 @@
   grid-column: 8/10;
   color: #fff;
   text-decoration: none;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 30px;
   opacity: 0.4; }
 
@@ -39,7 +39,7 @@
   grid-column: 2/4;
   color: #fff;
   text-decoration: none;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 30px;
   opacity: 0.4; }
 

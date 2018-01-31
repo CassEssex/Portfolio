@@ -1,3 +1,9 @@
+$teal: #33969c;
+$orange:#EF551f;
+$main-font:'Montserrat', sans-serif;
+
+
+
 .container_me{
 height: 100vh;
 display: grid;
@@ -12,7 +18,7 @@ flex-direction:column;
 @mixin header {
   color: #fff;
   text-decoration: none;
-  font-family: 'Montserrat', sans-serif;
+  font-family: $main-font;
   font-size: 30px;
 }
 
@@ -112,11 +118,11 @@ a{
 
   .work_3{
     @include project;
-    background-color: #EF551f;
+    background-color: $orange;
     grid-row: 5;
     grid-column: 8/10;
   }
-  
+
   .work_3:hover{
     transform: scale(1.1);
     text-transform: uppercase;
