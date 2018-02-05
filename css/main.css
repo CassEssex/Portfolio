@@ -274,4 +274,26 @@ body {
   text-decoration: underline yellow;
   transform: scale(1.2); }
 
+a {
+  text-decoration: none;
+  color: #fff; }
+
+a:hover {
+  color: #EF551f; }
+
+.linkedin {
+  text-decoration: none;
+  grid-row: 6;
+  grid-column: 4; }
+
+.github {
+  text-decoration: none;
+  grid-row: 6;
+  grid-column: 6; }
+
+.mailto {
+  text-decoration: none;
+  grid-row: 6;
+  grid-column: 5; }
+
 /*# sourceMappingURL=main.css.map */
