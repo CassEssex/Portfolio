@@ -2,6 +2,8 @@ $teal: #33969c;
 $orange:#EF551f;
 $main-font:'Montserrat', sans-serif;
 
+
+
 .container_me{
 height: 100vh;
 display: grid;
@@ -11,6 +13,7 @@ grid-column-gap: 15px;
 padding:30px;
 align-items:center;
 flex-direction:column;
+
 }
 
 @mixin header {
@@ -19,11 +22,21 @@ flex-direction:column;
   font-family: $main-font;
   font-size: 30px;
 }
+
+@mixin project {
+  height:100%;
+  padding-left: 10px;
+  padding-top: 10px;
+  text-decoration: none;
+  transition: 1s;
+}
+
 a{
   color: grey;
   text-decoration: none;
   font-size: 30px;
 }
+
 
 .about_me {
   grid-row:2;
@@ -75,27 +88,24 @@ transform: translateY(-4px);
   opacity: 1;
 }
 
-@mixin project {
-  height:100%;
-  padding-left: 10px;
-  padding-top: 10px;
-  text-decoration: none;
-  transition: 1s;
-}
-
 .work_1{
   @include project;
-  background-color: white;
+  background-color: grey;
   grid-row: 4/8;
   grid-column: 2/4;
   line-height: 28px;
   font-size: 20px;
+    border-bottom-right-radius: 50%;
 }
 
 .work_1:hover{
   transform: scale(1.1);
-  text-decoration-color: black;
-  border-bottom-right-radius: 50%;
+  border-bottom-right-radius: 0%;
+}
+
+.work_1 a:hover{
+  transform: scale(1.1);
+  color: yellow;
 }
 
   .work_2{
@@ -103,26 +113,37 @@ transform: translateY(-4px);
     background-color: yellow;
     grid-row: 4/8;
     grid-column: 5/7;
+    border-bottom-right-radius: 50%;
   }
 
+  .work_2 a{
+    color: grey;
+  }
   .work_2:hover{
     transform: scale(1.1);
-    text-decoration-color: black;
-    border-bottom-right-radius: 50%;
+    border-bottom-right-radius: 0%;
+  }
+
+  .work_2 a:hover{
+    transform: scale(1.1);
+    color: $orange;
   }
 
   .work_3{
     @include project;
-    background-color: $orange;
     grid-row: 4/8;
     grid-column: 8/10;
+    background-color: $orange;
+    border-bottom-right-radius:50%;
   }
 
   .work_3:hover{
     transform: scale(1.1);
-    text-decoration-color: black;
-    border-bottom-left-radius: 50%;
-    border-top-right-radius: 50%;
+    border-bottom-right-radius: 0%;
+  }
+  .work_3 a:hover{
+    transform: scale(1.1);
+    color: grey;
   }
 
   .bubble{

@@ -74,16 +74,20 @@ a {
   padding-top: 10px;
   text-decoration: none;
   transition: 1s;
-  background-color: white;
+  background-color: grey;
   grid-row: 4/8;
   grid-column: 2/4;
   line-height: 28px;
-  font-size: 20px; }
+  font-size: 20px;
+  border-bottom-right-radius: 50%; }
 
 .work_1:hover {
   transform: scale(1.1);
-  text-decoration-color: black;
-  border-bottom-right-radius: 50%; }
+  border-bottom-right-radius: 0%; }
+
+.work_1 a:hover {
+  transform: scale(1.1);
+  color: yellow; }
 
 .work_2 {
   height: 100%;
@@ -93,12 +97,19 @@ a {
   transition: 1s;
   background-color: yellow;
   grid-row: 4/8;
-  grid-column: 5/7; }
+  grid-column: 5/7;
+  border-bottom-right-radius: 50%; }
+
+.work_2 a {
+  color: grey; }
 
 .work_2:hover {
   transform: scale(1.1);
-  text-decoration-color: black;
-  border-bottom-right-radius: 50%; }
+  border-bottom-right-radius: 0%; }
+
+.work_2 a:hover {
+  transform: scale(1.1);
+  color: #EF551f; }
 
 .work_3 {
   height: 100%;
@@ -106,15 +117,18 @@ a {
   padding-top: 10px;
   text-decoration: none;
   transition: 1s;
-  background-color: #EF551f;
   grid-row: 4/8;
-  grid-column: 8/10; }
+  grid-column: 8/10;
+  background-color: #EF551f;
+  border-bottom-right-radius: 50%; }
 
 .work_3:hover {
   transform: scale(1.1);
-  text-decoration-color: black;
-  border-bottom-left-radius: 50%;
-  border-top-right-radius: 50%; }
+  border-bottom-right-radius: 0%; }
+
+.work_3 a:hover {
+  transform: scale(1.1);
+  color: grey; }
 
 .bubble {
   position: absolute;
