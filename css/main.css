@@ -68,13 +68,13 @@ body {
 
 .skills_me:hover {
   text-decoration: underline yellow;
-  transform: translateY(-4px);
-  opacity: 1; }
+  opacity: 1;
+  transform: translateY(-4px); }
 
 .home:hover {
   text-decoration: underline yellow;
-  transform: translateY(-4px);
-  opacity: 1; }
+  opacity: 1;
+  transform: translateY(-4px); }
 
 .title1 {
   color: #FFF;
@@ -285,16 +285,25 @@ a {
   grid-column: 4;
   transform: translateX(100px); }
 
+.linkedin a:hover {
+  color: #EF551f; }
+
 .github {
   text-decoration: none;
   grid-row: 6;
   grid-column: 6;
   transform: translateX(-40px); }
 
+.github a:hover {
+  color: #EF551f; }
+
 .mailto {
   text-decoration: none;
   grid-row: 6;
   grid-column: 7;
   transform: translateX(-40px); }
+
+.mailto a:hover {
+  color: #EF551f; }
 
 /*# sourceMappingURL=main.css.map */
