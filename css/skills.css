@@ -13,7 +13,8 @@
   color: #fff;
   text-decoration: none;
   font-family: "Montserrat", sans-serif;
-  font-size: 30px; }
+  font-size: 30px;
+  opacity: 0.4; }
 
 .work_me {
   grid-row: 2;
@@ -46,7 +47,7 @@
   text-decoration: underline yellow;
   transform: translateY(-4px); }
 
-.me:hover {
+.about_me:hover {
   text-decoration: underline yellow;
   transform: translateY(-4px);
   opacity: 1; }

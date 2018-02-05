@@ -17,11 +17,18 @@ flex-direction:column;
   font-family: $main-font;
   font-size: 30px;
 }
+@mixin job {
+  position: relative;
+  animation-name: tetris;
+  animation-duration: 5s;
+  animation-iteration-count: 1;
+}
 
 .me {
   grid-row:2;
   grid-column: 4/6;
   @include header;
+  opacity: 0.4;
 }
 
 .work_me {
@@ -50,7 +57,7 @@ text-decoration: underline yellow;
 transform: translateY(-4px);
 }
 
-.me:hover {
+.about_me:hover {
   text-decoration: underline yellow;
   transform: translateY(-4px);
   opacity: 1;
@@ -89,12 +96,7 @@ transform: translateY(-4px);
   animation-iteration-count: 1;
 }
 
-@mixin job {
-  position: relative;
-  animation-name: tetris;
-  animation-duration: 5s;
-  animation-iteration-count: 1;
-}
+
 
 .line_2{
   grid-row:7;
