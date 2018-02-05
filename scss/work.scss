@@ -2,8 +2,6 @@ $teal: #33969c;
 $orange:#EF551f;
 $main-font:'Montserrat', sans-serif;
 
-
-
 .container_me{
 height: 100vh;
 display: grid;
@@ -26,12 +24,14 @@ flex-direction:column;
   grid-row:2;
   grid-column: 4/6;
   @include header;
+  opacity: 0.4;
 }
 
 .work_me {
   grid-row:2;
   grid-column: 6/8;
   @include header;
+  opacity: 1;
 }
 
 .skills_me {
@@ -141,5 +141,5 @@ a{
 
 .linkedin a{
   text-decoration: none;
-  
+
 }

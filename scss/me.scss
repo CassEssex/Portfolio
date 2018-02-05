@@ -1,5 +1,7 @@
-$main-font:'Montserrat', sans-serif;
 
+$teal: #33969c;
+$orange:#EF551f;
+$main-font:'Montserrat', sans-serif;
 
 .container_me{
 height: 100vh;
@@ -19,7 +21,8 @@ flex-direction:column;
   text-decoration: none;
   font-family: $main-font;
   font-size: 30px;
-  z-index: 2;;
+  z-index: 2;
+  opacity: 1;
 }
 
 .work_me {
@@ -53,6 +56,7 @@ flex-direction:column;
 
 .me:hover {
   text-decoration: underline yellow;
+  opacity: 1;
   transform: translateY(-4px);
 }
 
