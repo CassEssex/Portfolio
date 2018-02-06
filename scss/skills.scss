@@ -82,10 +82,28 @@ transform: translateY(-4px);
   background-color: yellow;
   box-shadow: inset -8px -6px 26px #982727;
 }
+//start of tetris///////////
+.line_1{
+  grid-row:6;
+  grid-column: 3/7;
+  background-color: grey;
+  height: 100%;
+  z-index: 1;
+  @include job;
+}
+
+.line_2{
+  grid-row:7;
+  grid-column: 3/7;
+  background-color: grey;
+  height: 100%;
+  z-index: 1;
+  @include job;
+}
 
 .line_3{
   grid-row:8;
-  grid-column: 2/10;
+  grid-column: 3/8;
   background-color: grey;
   height: 100%;
   z-index: 1;
@@ -97,18 +115,11 @@ transform: translateY(-4px);
 
 
 
-.line_2{
-  grid-row:7;
-  grid-column: 2/8;
-  background-color: grey;
-  height: 100%;
-  z-index: 1;
-  @include job;
-}
 
-.experience{
+
+.languages{
   grid-row: 5;
-  grid-column: 2/4;
+  grid-column: 3/6;
   font-size: 28px;
   @include job;
 }
@@ -119,7 +130,7 @@ transform: translateY(-4px);
 
 .job1{
   grid-row: 8;
-  grid-column: 2/4;
+  grid-column: 3/4;
   padding-left: 7px;
   z-index: 2;
   color:#fff;
@@ -143,7 +154,7 @@ transform: translateY(-4px);
 }
 .job4{
   grid-row: 8;
-  grid-column: 8/10;
+  grid-column: 7/8;
   z-index: 2;
   color:#fff;
   @include job;
@@ -151,7 +162,7 @@ transform: translateY(-4px);
 
 .job5{
   grid-row: 7;
-  grid-column: 2/4;
+  grid-column: 3/4;
   z-index: 2;
   padding-left: 7px;
   @include job;
@@ -171,10 +182,41 @@ transform: translateY(-4px);
 }
 .job8{
   grid-row: 6;
-  grid-column:2/4;
+  grid-column:3/4;
   background-color: grey;
   height: 100%;
   padding-left: 7px;
+  z-index: 4;
+  @include job;
+}
+
+.job9{
+  grid-row: 6;
+  grid-column:4/5;
+  background-color: grey;
+  height: 100%;
+  padding-left: 7px;
+    z-index: 4;
+  @include job;
+}
+
+.job10{
+  grid-row: 6;
+  grid-column:5/6;
+  background-color: grey;
+  height: 100%;
+  padding-left: 7px;
+    z-index: 4;
+  @include job;
+}
+
+.job11{
+  grid-row: 6;
+  grid-column:6/7;
+  background-color: grey;
+  height: 100%;
+  padding-left: 7px;
+    z-index: 4;
   @include job;
 }
 
