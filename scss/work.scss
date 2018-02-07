@@ -2,7 +2,15 @@ $teal: #33969c;
 $orange:#EF551f;
 $main-font:'Montserrat', sans-serif;
 
-
+body {
+  margin: 0;
+  padding: 0;
+  background-color: $teal;
+  font-family: $main-font;
+  color: #FFF;
+  overflow: hidden;
+  background-image:url("https://www.transparenttextures.com/patterns/rice-paper-3.png");
+}
 
 .container_me{
 height: 100vh;
@@ -13,7 +21,6 @@ grid-column-gap: 15px;
 padding:30px;
 align-items:center;
 flex-direction:column;
-
 }
 
 @mixin header {
@@ -21,6 +28,12 @@ flex-direction:column;
   text-decoration: none;
   font-family: $main-font;
   font-size: 30px;
+  justify-self:center;
+}
+@mixin header_hover {
+  text-decoration: underline yellow;
+  opacity: 1;
+  transform: translateY(-4px);
 }
 
 @mixin project {
@@ -37,7 +50,7 @@ a{
   font-size: 30px;
 }
 
-
+// header//////////////
 .about_me {
   grid-row:2;
   grid-column: 4/6;
@@ -49,7 +62,6 @@ a{
   grid-row:2;
   grid-column: 6/8;
   @include header;
-  opacity: 1;
 }
 
 .skills_me {
@@ -66,27 +78,135 @@ a{
   opacity: 0.4;
 }
 
-.work_me:hover {
-text-decoration: underline yellow;
-transform: translateY(-4px);
+.about_me:hover {
+  @include header_hover;
 }
 
-.me:hover {
-  text-decoration: underline yellow;
-  transform: translateY(-4px);
-  opacity: 1;
+.work_me:hover {
+  @include header_hover;
 }
 
 .skills_me:hover {
-  text-decoration: underline yellow;
-  transform: translateY(-4px);
-  opacity: 1;
+  @include header_hover;
 }
 .home:hover {
-  text-decoration: underline yellow;
-  transform: translateY(-4px);
-  opacity: 1;
+  @include header_hover;
 }
+
+///////hamburger////////////
+.menu {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  height: 46px;
+  width: 46px;
+}
+
+.menu-link {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 1002;
+}
+
+.menu-icon {
+  position: absolute;
+  width: 30px;
+  height: 14px;
+  margin: auto;
+  left: 28px;
+  top: 0;
+  right: 0;
+  bottom: 1px;
+}
+
+.menu-line{
+  background-color: #FFF;
+  height:2px;
+  width:100%;
+  border-radius:2px;
+  position:absolute;
+  left:0;
+  transition:all 0.25s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.menu-line-2{
+  top:0;
+  bottom:0;
+  margin:auto;
+}
+
+.menu-line-3{
+  bottom:0;
+}
+
+.menu.open .menu-line-1 {
+  transform: translateY(7px) translateY(-50%) rotate(-135deg);
+}
+
+.menu.open .menu-line-2 {
+  opacity: 0;
+}
+.menu.open .menu-line-3 {
+  transform:translateY(-7px) translateY(50%) rotate(135deg);
+}
+
+.menu-circle {
+  background-color: $orange;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  border-radius: 50%;
+  transform: scale(1);
+  z-index: 1000;
+  transition:transform 0.6s cubic-bezier(0.19, 1, 0.22, 1);
+  box-shadow: inset -8px -6px 26px #982727;
+}
+
+.menu:hover .menu-circle {
+  transform: scale(1.5);
+}
+
+.menu.open .menu-circle{
+  transform: scale(60);
+}
+
+.menu-overlay {
+  color: #333;
+  position: fixed;
+  text-align: center;
+  transition: opacity 0.8s ease-in-out;
+  z-index: 1001;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.menu-overlay.open{
+  opacity: 1;
+  visibility: visible;
+}
+
+.menu-overlay a {
+  color: #FFF;
+  font-weight: 600;
+  font-size: 32px;
+  margin:  25% 1% 0;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.menu-overlay a:hover{
+  text-decoration: underline yellow;
+  transform: scale(1.2);
+}
+//////////////////////////
+
+a{
+  text-decoration: none;
+  color:#fff;
+}
+
+// works////////////
 
 .work_1{
   @include project;

@@ -1,21 +1,13 @@
 $orange:#EF551f;
+$teal: #33969c;
 $main-font:'Montserrat', sans-serif;
-
-.container_me{
-height: 100vh;
-display: grid;
-grid-template-columns: repeat(10,1fr);
-grid-template-rows: repeat(12,1fr);
-padding:30px;
-align-items:center;
-flex-direction:column;
-}
 
 @mixin header {
   color: #fff;
   text-decoration: none;
   font-family: $main-font;
   font-size: 30px;
+  justify-self:center;
 }
 @mixin job {
   position: relative;
@@ -38,6 +30,33 @@ flex-direction:column;
   animation-iteration-count: 1;
 }
 
+@mixin header_hover {
+  text-decoration: underline yellow;
+  opacity: 1;
+  transform: translateY(-4px);
+}
+
+//////////////////////////////
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: $teal;
+  font-family: $main-font;
+  color: #FFF;
+  overflow: hidden;
+  background-image:url("https://www.transparenttextures.com/patterns/rice-paper-3.png");
+}
+
+.container_me{
+height: 100vh;
+display: grid;
+grid-template-columns: repeat(10,1fr);
+grid-template-rows: repeat(12,1fr);
+padding:30px;
+align-items:center;
+flex-direction:column;
+}
 // header///////////////////
 .me {
   grid-row:2;
@@ -67,28 +86,22 @@ flex-direction:column;
   opacity: 0.4;
 }
 
-.work_me:hover {
-text-decoration: underline yellow;
-transform: translateY(-4px);
+.about_me:hover {
+  @include header_hover;
 }
 
-.about_me:hover {
-  text-decoration: underline yellow;
-  transform: translateY(-4px);
-  opacity: 1;
+.work_me:hover {
+  @include header_hover;
 }
 
 .skills_me:hover {
-  text-decoration: underline yellow;
-  transform: translateY(-4px);
-  opacity: 1;
+  @include header_hover;
 }
 .home:hover {
-  text-decoration: underline yellow;
-  transform: translateY(-4px);
-  opacity: 1;
+  @include header_hover;
 }
 
+// animation bubble////////////////
 .bubble{
   position: absolute;
   width:5em;

@@ -1,3 +1,12 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #33969c;
+  font-family: "Montserrat", sans-serif;
+  color: #FFF;
+  overflow: hidden;
+  background-image: url("https://www.transparenttextures.com/patterns/rice-paper-3.png"); }
+
 .container_me {
   height: 100vh;
   display: grid;
@@ -20,6 +29,7 @@ a {
   text-decoration: none;
   font-family: "Montserrat", sans-serif;
   font-size: 30px;
+  justify-self: center;
   opacity: 0.4; }
 
 .work_me {
@@ -29,7 +39,7 @@ a {
   text-decoration: none;
   font-family: "Montserrat", sans-serif;
   font-size: 30px;
-  opacity: 1; }
+  justify-self: center; }
 
 .skills_me {
   grid-row: 2;
@@ -38,6 +48,7 @@ a {
   text-decoration: none;
   font-family: "Montserrat", sans-serif;
   font-size: 30px;
+  justify-self: center;
   opacity: 0.4; }
 
 .home {
@@ -47,26 +58,123 @@ a {
   text-decoration: none;
   font-family: "Montserrat", sans-serif;
   font-size: 30px;
+  justify-self: center;
   opacity: 0.4; }
+
+.about_me:hover {
+  text-decoration: underline yellow;
+  opacity: 1;
+  transform: translateY(-4px); }
 
 .work_me:hover {
   text-decoration: underline yellow;
+  opacity: 1;
   transform: translateY(-4px); }
-
-.me:hover {
-  text-decoration: underline yellow;
-  transform: translateY(-4px);
-  opacity: 1; }
 
 .skills_me:hover {
   text-decoration: underline yellow;
-  transform: translateY(-4px);
-  opacity: 1; }
+  opacity: 1;
+  transform: translateY(-4px); }
 
 .home:hover {
   text-decoration: underline yellow;
-  transform: translateY(-4px);
-  opacity: 1; }
+  opacity: 1;
+  transform: translateY(-4px); }
+
+.menu {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  height: 46px;
+  width: 46px; }
+
+.menu-link {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 1002; }
+
+.menu-icon {
+  position: absolute;
+  width: 30px;
+  height: 14px;
+  margin: auto;
+  left: 28px;
+  top: 0;
+  right: 0;
+  bottom: 1px; }
+
+.menu-line {
+  background-color: #FFF;
+  height: 2px;
+  width: 100%;
+  border-radius: 2px;
+  position: absolute;
+  left: 0;
+  transition: all 0.25s cubic-bezier(0.175, 0.885, 0.32, 1.275); }
+
+.menu-line-2 {
+  top: 0;
+  bottom: 0;
+  margin: auto; }
+
+.menu-line-3 {
+  bottom: 0; }
+
+.menu.open .menu-line-1 {
+  transform: translateY(7px) translateY(-50%) rotate(-135deg); }
+
+.menu.open .menu-line-2 {
+  opacity: 0; }
+
+.menu.open .menu-line-3 {
+  transform: translateY(-7px) translateY(50%) rotate(135deg); }
+
+.menu-circle {
+  background-color: #EF551f;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  border-radius: 50%;
+  transform: scale(1);
+  z-index: 1000;
+  transition: transform 0.6s cubic-bezier(0.19, 1, 0.22, 1);
+  box-shadow: inset -8px -6px 26px #982727; }
+
+.menu:hover .menu-circle {
+  transform: scale(1.5); }
+
+.menu.open .menu-circle {
+  transform: scale(60); }
+
+.menu-overlay {
+  color: #333;
+  position: fixed;
+  text-align: center;
+  transition: opacity 0.8s ease-in-out;
+  z-index: 1001;
+  opacity: 0;
+  visibility: hidden; }
+
+.menu-overlay.open {
+  opacity: 1;
+  visibility: visible; }
+
+.menu-overlay a {
+  color: #FFF;
+  font-weight: 600;
+  font-size: 32px;
+  margin: 25% 1% 0;
+  display: inline-block;
+  text-decoration: none; }
+
+.menu-overlay a:hover {
+  text-decoration: underline yellow;
+  transform: scale(1.2); }
+
+a {
+  text-decoration: none;
+  color: #fff; }
 
 .work_1 {
   height: 100%;

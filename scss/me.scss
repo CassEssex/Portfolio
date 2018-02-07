@@ -23,6 +23,7 @@ flex-direction:column;
   font-size: 30px;
   z-index: 2;
   opacity: 1;
+  justify-self:center;
 }
 
 .work_me {
@@ -33,6 +34,7 @@ flex-direction:column;
   text-decoration: none;
   font-family: $main-font;
   font-size: 30px;
+  justify-self:center;
 }
 
 .skills_me {
@@ -43,6 +45,7 @@ flex-direction:column;
   text-decoration: none;
   font-family: $main-font;
   font-size: 30px;
+  justify-self:center;
 }
 .home {
   grid-row:2;
@@ -52,6 +55,7 @@ flex-direction:column;
   text-decoration: none;
   font-family: $main-font;
   font-size: 30px;
+  justify-self:center;
 }
 
 .me:hover {

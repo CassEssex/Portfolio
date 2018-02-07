@@ -16,7 +16,8 @@
   font-family: "Montserrat", sans-serif;
   font-size: 30px;
   z-index: 2;
-  opacity: 1; }
+  opacity: 1;
+  justify-self: center; }
 
 .work_me {
   grid-row: 2;
@@ -25,7 +26,8 @@
   opacity: 0.4;
   text-decoration: none;
   font-family: "Montserrat", sans-serif;
-  font-size: 30px; }
+  font-size: 30px;
+  justify-self: center; }
 
 .skills_me {
   grid-row: 2;
@@ -34,7 +36,8 @@
   opacity: 0.4;
   text-decoration: none;
   font-family: "Montserrat", sans-serif;
-  font-size: 30px; }
+  font-size: 30px;
+  justify-self: center; }
 
 .home {
   grid-row: 2;
@@ -43,7 +46,8 @@
   opacity: 0.4;
   text-decoration: none;
   font-family: "Montserrat", sans-serif;
-  font-size: 30px; }
+  font-size: 30px;
+  justify-self: center; }
 
 .me:hover {
   text-decoration: underline yellow;

@@ -1,3 +1,12 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #33969c;
+  font-family: "Montserrat", sans-serif;
+  color: #FFF;
+  overflow: hidden;
+  background-image: url("https://www.transparenttextures.com/patterns/rice-paper-3.png"); }
+
 .container_me {
   height: 100vh;
   display: grid;
@@ -14,6 +23,7 @@
   text-decoration: none;
   font-family: "Montserrat", sans-serif;
   font-size: 30px;
+  justify-self: center;
   opacity: 0.4; }
 
 .work_me {
@@ -23,6 +33,7 @@
   text-decoration: none;
   font-family: "Montserrat", sans-serif;
   font-size: 30px;
+  justify-self: center;
   opacity: 0.4; }
 
 .skills_me {
@@ -32,6 +43,7 @@
   text-decoration: none;
   font-family: "Montserrat", sans-serif;
   font-size: 30px;
+  justify-self: center;
   opacity: 1; }
 
 .home {
@@ -41,26 +53,28 @@
   text-decoration: none;
   font-family: "Montserrat", sans-serif;
   font-size: 30px;
+  justify-self: center;
   opacity: 0.4; }
-
-.work_me:hover {
-  text-decoration: underline yellow;
-  transform: translateY(-4px); }
 
 .about_me:hover {
   text-decoration: underline yellow;
-  transform: translateY(-4px);
-  opacity: 1; }
+  opacity: 1;
+  transform: translateY(-4px); }
+
+.work_me:hover {
+  text-decoration: underline yellow;
+  opacity: 1;
+  transform: translateY(-4px); }
 
 .skills_me:hover {
   text-decoration: underline yellow;
-  transform: translateY(-4px);
-  opacity: 1; }
+  opacity: 1;
+  transform: translateY(-4px); }
 
 .home:hover {
   text-decoration: underline yellow;
-  transform: translateY(-4px);
-  opacity: 1; }
+  opacity: 1;
+  transform: translateY(-4px); }
 
 .bubble {
   position: absolute;
