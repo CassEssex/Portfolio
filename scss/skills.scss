@@ -323,14 +323,26 @@ transform: translateY(-4px);
   @include skill;
 }
 
+@keyframes side{
+  0% {   left:0px;}
+  25% {  left:180px;}
+  50% {  left:0px;}
+  75% {  left:180px;}
+  100% { left:0px;}
+}
+
+
 .creative{
   color:$orange;
   grid-row: 8;
   grid-column: 7/9;
   z-index: 5;
   padding-left: 7px;
-  font-size: 25px;
+  font-size: 20px;
   @include creativea;
+  animation-name: side;
+  animation-duration: 6s;
+  animation-iteration-count: 3;
 }
 
 .line_6{
@@ -338,7 +350,6 @@ transform: translateY(-4px);
   grid-row: 8;
   grid-column: 7/9;
   height: 100%;
-  @include creativea;
 }
 
 .line_5{

@@ -334,27 +334,37 @@
   animation-duration: 4s;
   animation-iteration-count: 1; }
 
+@keyframes side {
+  0% {
+    left: 0px; }
+  25% {
+    left: 180px; }
+  50% {
+    left: 0px; }
+  75% {
+    left: 180px; }
+  100% {
+    left: 0px; } }
 .creative {
   color: #EF551f;
   grid-row: 8;
   grid-column: 7/9;
   z-index: 5;
   padding-left: 7px;
-  font-size: 25px;
+  font-size: 20px;
   position: relative;
   animation-name: tetris3;
   animation-duration: 3s;
-  animation-iteration-count: 1; }
+  animation-iteration-count: 1;
+  animation-name: side;
+  animation-duration: 6s;
+  animation-iteration-count: 3; }
 
 .line_6 {
   background-color: yellow;
   grid-row: 8;
   grid-column: 7/9;
-  height: 100%;
-  position: relative;
-  animation-name: tetris3;
-  animation-duration: 3s;
-  animation-iteration-count: 1; }
+  height: 100%; }
 
 .line_5 {
   grid-row: 6;
