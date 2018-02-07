@@ -282,8 +282,8 @@ a {
 .linkedin {
   text-decoration: none;
   grid-row: 6;
-  grid-column: 4;
-  transform: translateX(100px); }
+  grid-column: 5;
+  justify-self: center; }
 
 .linkedin a:hover {
   color: #EF551f; }
@@ -292,7 +292,7 @@ a {
   text-decoration: none;
   grid-row: 6;
   grid-column: 6;
-  transform: translateX(-40px); }
+  justify-self: center; }
 
 .github a:hover {
   color: #EF551f; }
@@ -301,9 +301,18 @@ a {
   text-decoration: none;
   grid-row: 6;
   grid-column: 7;
-  transform: translateX(-40px); }
+  justify-self: center; }
 
 .mailto a:hover {
+  color: #EF551f; }
+
+.resume {
+  text-decoration: none;
+  grid-row: 6;
+  grid-column: 4;
+  justify-self: center; }
+
+.resume a:hover {
   color: #EF551f; }
 
 /*# sourceMappingURL=main.css.map */
