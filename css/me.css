@@ -117,5 +117,9 @@ p3 {
   .container_me img {
     height: 200px;
     width: 250px; } }
+@media (max-width: 700px) {
+  .container_me img {
+    height: 200px;
+    width: 250px; } }
 
 /*# sourceMappingURL=me.css.map */

@@ -145,14 +145,6 @@ body {
   @include circle;
 }
 
-.title-circle4{
-  grid-row: 6;
-  grid-column:6;
-  animation-name: work;
-  animation-duration: 2s;
-  @include circle;
-}
-
 .title-circle5{
   grid-row: 7;
   grid-column:10;
@@ -346,4 +338,47 @@ a{
 }
 .resume a:hover{
   color: $orange;
+}
+
+
+@media only screen and (max-width:700px) {
+  .container .home{
+    grid-row:4;
+    grid-column: 2/4;
+    justify-self:left;
+  }
+
+  .container .about_me{
+    grid-row:5;
+    grid-column: 2/4;
+    align-items: left;
+  }
+  .container .work_me{
+    grid-row:6;
+    grid-column: 2/4;
+    align-items: left;
+  }
+  .container .skills_me{
+    grid-row:7;
+    grid-column: 2/4;
+    align-items: left;
+  }
+
+  .container .title-circle, .container .title-circle2, .container .title-circle3 , .container .title-circle5, .container .title-circle6, .container .title-circle7 {
+    display: none;
+  }
+
+    .container .title1{
+    display: none;
+  }
+
+  .container .title2{
+    font-size: 30px;
+    grid-column: 5/8;
+  }
+
+  .container .resume{
+    grid-column: 8;
+  }
+
 }
