@@ -72,7 +72,7 @@
 img {
   height: 350px;
   width: 500px;
-  grid-row: 5;
+  grid-row: 5/8;
   grid-column: 2/10;
   border-radius: 50%;
   z-index: 1;
@@ -82,28 +82,46 @@ img {
   height: 600px;
   width: 600px;
   background-color: yellow;
-  grid-row: 5;
+  grid-row: 5/8;
   grid-column: 1/4;
   z-index: -1;
   border-radius: 49% 52% 50% 1%;
   background: linear-gradient(to left, rgba(255, 255, 0, 0), yellow); }
 
-p1 {
+.p1 {
+  grid-row: 4/5;
+  color: #fff;
   font-family: 'Open Sans', sans-serif;
-  color: white;
+  font-size: 20px;
+  grid-column: 6/10; }
+
+.p2 {
   grid-row: 5/6;
-  grid-column: 6/9;
-  font-size: 20px; }
+  color: #fff;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 20px;
+  grid-column: 6/10; }
 
-p2 {
-  color: white;
+.p3 {
   grid-row: 6/7;
-  grid-column: 6/9; }
+  color: #fff;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 20px;
+  grid-column: 6/10; }
 
-p3 {
-  color: white;
-  grid-row: 6/7;
-  grid-column: 6/9; }
+.p4 {
+  grid-row: 7;
+  color: #fff;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 20px;
+  grid-column: 6/10; }
+
+.p5 {
+  grid-row: 8;
+  color: #fff;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 20px;
+  grid-column: 6/10; }
 
 .bubble {
   position: absolute;
@@ -113,13 +131,31 @@ p3 {
   background-color: yellow;
   box-shadow: inset -8px -6px 26px #982727; }
 
-@media (max-width: 500px) {
-  .container_me img {
-    height: 200px;
-    width: 250px; } }
 @media (max-width: 700px) {
-  .container_me img {
-    height: 200px;
-    width: 250px; } }
+  .container_me img, .container_me .me_circle {
+    display: none; }
+
+  .container_me .home {
+    grid-row: 3;
+    grid-column: 2/4;
+    justify-self: left; }
+
+  .container_me .me {
+    grid-row: 4;
+    grid-column: 2/4;
+    align-items: left; }
+
+  .container_me .work_me {
+    grid-row: 5;
+    grid-column: 2/4;
+    align-items: left; }
+
+  .container_me .skills_me {
+    grid-row: 6;
+    grid-column: 2/4;
+    justify-self: left; }
+
+  .container_me .p1, .container_me .p2, .container_me .p3, .container_me .p4, .container_me .p5 {
+    grid-column: 5/10; } }
 
 /*# sourceMappingURL=me.css.map */
