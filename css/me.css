@@ -113,7 +113,7 @@ p3 {
   background-color: yellow;
   box-shadow: inset -8px -6px 26px #982727; }
 
-@media (max-width: 700px) {
+@media (max-width: 500px) {
   .container_me img {
     height: 200px;
     width: 250px; } }
